@@ -22,7 +22,6 @@ public class AttendeeController {
 	
 	@RequestMapping(value="/attendee", method=RequestMethod.POST)
 	public String processAttendee(@Valid Attendee attendee, BindingResult result, Model m) {
-		System.out.println(attendee);
 		
 		//Error validation
 		if(result.hasErrors()) {
